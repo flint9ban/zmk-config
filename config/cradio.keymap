@@ -21,7 +21,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-       tdslh{
+       tdslh:tap_dance_slh{
             label = "tap_dance_slh";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -42,28 +42,28 @@
             tapping-term-ms = <200>;
             bindings = <&kp SQT>, <&kp DQT>, <&kp GRAVE>;
         };
-	tdh{
+	tdh:tap_dance_hash {
             label = "tap_dance_hash";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp HASH>, <&kp STAR>, <&kp EQUAL>;
         };
-        tdpar{
+        tdpar:tap_dance_par{
             label = "tap_dance_par";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
-      	tdbkt{
+      	tdbkt:tap_dance_bkt{
             label = "tap_dance_bkt";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
-       tdbrc{
+       tdbrc:tap_dance_brc{
             label = "tap_dance_brc";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
