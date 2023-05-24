@@ -137,7 +137,7 @@
         //│    +     │   :      │     |    │     ?    │ '/"/`    │   │ caps     │          │          │          │          │
            &kp PLUS   &kp COLON  &kp PIPE   &kp QMARK   &tds          &kp CAPS   &trans     &trans      &trans      &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &RSHFT          &none     &trans
+                                            &trans     &kp RSHFT          &none     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
