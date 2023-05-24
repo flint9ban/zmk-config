@@ -27,7 +27,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp FSLH>, <&kp BSLH>;
-        }
+        };
         tdm: tap_dance_minus {
             label = "tap_dance_minus";
             compatible = "zmk,behavior-tap-dance";
@@ -41,35 +41,35 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp SQT>, <&kp DQT>, <&kp GRAVE>;
-        }
+        };
 	tdh{
             label = "tap_dance_hash";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp HASH>, <&kp STAR>, <&kp EQUAL>;
-        }
+        };
         tdpar{
             label = "tap_dance_par";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LPAR>, <&kp RPAR>;
-        }
+        };
       	tdbkt{
             label = "tap_dance_bkt";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LBKT>, <&kp RBKT>;
-        }
+        };
        tdbrc{
             label = "tap_dance_brc";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LBRC>, <&kp RBRC>;
-        }
+        };
     };
 
     keymap {
