@@ -70,8 +70,8 @@
             tapping-term-ms = <200>;
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
-            label = "tap_dance_j";
        tdj:tap_dance_j{
+            label = "tap_dance_j";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
