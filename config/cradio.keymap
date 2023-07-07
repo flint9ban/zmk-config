@@ -74,28 +74,28 @@
             label = "tap_dance_j";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&ht LSHFT J>, <&kp J>;
         };
        tdk:tap_dance_k{
             label = "tap_dance_k";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&ht LALT K>, <&kp K>;
         };
        tdl:tap_dance_l{
             label = "tap_dance_l";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&ht LGUI L>, <&kp L>;
         };
        tdsemi:tap_dance_semi{
             label = "tap_dance_semi";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&ht LCTRL SEMI>, <&kp SEMI>;
         };
     };
@@ -122,13 +122,13 @@
         nav_layer {
             bindings =<
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  HOME    │  END     │  Page up │  Page Dw │          │   │          │  Up      │  ()      │  []      │ {}       │
-            &kp HOME  &kp END    &kp PG_UP  &kp PG_DN  &trans          &trans     &kp UP    &tdpar     &tdbkt      &tdbrc
+        //│  HOME    │  END     │  Page up │  Page Dw │          │   │    (     │  )       │   [      │   ]      │ {        │
+            &kp HOME  &kp END    &kp PG_UP  &kp PG_DN  &trans          &kp LPAR  &kp RPAR    &kp LBKT   &kp RBKT    &kp LBRC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  <-      │  Down    │  ->      │          │          │
-           &trans    &trans     &trans     &trans     &trans          &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans
+        //│          │          │          │          │          │   │  <-      │  Down    │  UP      │    ->    │  }       │
+           &trans    &trans     &trans     &trans     &trans          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &kp RBRC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │   	   │          │          │          │
+        //│          │          │          │          │          │   │          │   	     │          │          │          │
             &trans    &trans     &trans     &trans     &trans          &trans    &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &none     &trans          &trans    &trans
