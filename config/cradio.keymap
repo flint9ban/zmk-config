@@ -70,6 +70,34 @@
             tapping-term-ms = <200>;
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
+            label = "tap_dance_j";
+       tdj:tap_dance_j{
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht LSHFT J>, <&kp J>;
+        };
+       tdk:tap_dance_k{
+            label = "tap_dance_k";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht LALT K>, <&kp K>;
+        };
+       tdl:tap_dance_l{
+            label = "tap_dance_l";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht LGUI L>, <&kp L>;
+        };
+       tdsemi:tap_dance_semi{
+            label = "tap_dance_semi";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht LCTRL SEMI>, <&kp SEMI>;
+        };
     };
 
     keymap {
@@ -81,7 +109,7 @@
             &kp Q      &kp W      &ht UP E  &ht DOWN R      &kp T         &kp  Y     &ht LEFT U &ht RIGHT I &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ;:       │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
+            HRML(A,        S,         D,         F)     &kp G          &kp H      tdj,        tdk,         tdl,      tdsemi
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
