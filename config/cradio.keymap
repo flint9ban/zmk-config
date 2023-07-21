@@ -33,21 +33,21 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp UNDER>, <&kp MINUS>, <&kp EQUAL>;
+            bindings = <&kp UNDER>, <&kp MINUS> ;
         };
 	tds: tap_dance_sqt {
             label = "tap_dance_sqt";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SQT>, <&kp DQT>, <&kp GRAVE>;
+            bindings = <&kp SQT>, <&kp DQT>;
         };
 	tdh:tap_dance_hash {
             label = "tap_dance_hash";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp HASH>, <&kp STAR>, <&kp EQUAL>;
+            bindings = <&kp HASH>, <&kp STAR>;
         };
         tdpar:tap_dance_par{
             label = "tap_dance_par";
@@ -128,8 +128,8 @@
         //│          │          │          │          │          │   │  <-      │  Down    │  UP      │    ->    │  }       │
            &trans    &trans     &trans     &trans     &trans          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &kp RBRC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │   	     │          │          │          │
-            &trans    &trans     &trans     &trans     &trans          &trans    &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │     =    │    `     │          │          │          │
+            &trans    &trans     &trans     &trans     &trans          &kp EQUAL &kp GRAVE     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &none     &trans          &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -159,10 +159,10 @@
         //│    ~     │    !     │    @     │  #/*     │     $    │   │ DEL      │   INS    │          │          │          │
             &kp TILDE &kp EXCL    &kp AT     &tdh       &kp DLLR         &kp DEL &kp INS       &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    %     │     ^    │     &    │   /\     │  _/-/=   │   │          │          │          │          │          │
+        //│    %     │     ^    │     &    │   /\     │  _/-=    │   │          │          │          │          │          │
            &kp PRCNT  &kp CARET  &kp AMPS   &tdslh        &tdm        &trans     &trans     &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    +     │   :      │     |    │     ?    │ '/"/`    │   │ caps     │          │          │          │          │
+        //│    +     │   :      │     |    │     ?    │ '/"      │   │ caps     │          │          │          │          │
            &kp PLUS   &kp COLON  &kp PIPE   &kp QMARK   &tds          &kp CAPS   &trans     &trans      &trans      &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &trans     &kp RSHFT          &none     &trans
