@@ -114,10 +114,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &ht UP E  &ht DOWN R      &kp T         &kp  Y     &ht LEFT U &ht RIGHT I &kp O      &kp P
+            &kp Q      &kp W      &ht UP E  &ht DOWN R      &kp T       &kp  Y    HRMR(U,      I,        O,         P)   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ;:       │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,     K,         L,        SEMI)            
+            HRML(A,        S,         D,         F)     &kp G         &ht LEFT H &ht DOWN J &ht UP K   &ht RIGHT L &kp SEMI            
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
