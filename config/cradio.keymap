@@ -22,6 +22,16 @@
 	};
     };
     behaviors {
+        hts: hold_tap_s {
+            label = "hold_tap_s";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&ltsh>, <&kp>;
+        };
         ht: hold_tap {
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
@@ -125,7 +135,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &ht UP E  &ltsh      &kp T       &kp  Y    &kp U      &kp I        &kp O    &kp P   
+            &kp Q      &kp W      &ht UP E  &hts 0 R    &kp T       &kp  Y    &kp U      &kp I        &kp O    &kp P   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ;:       │
             HRML(A,        S,         D,         F)     &kp G         &ht LEFT H &ht DOWN J &ht UP K   &ht RIGHT L &kp SEMI            
