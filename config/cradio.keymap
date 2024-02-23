@@ -114,7 +114,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &ht UP E  &ht DOWN R      &kp T       &kp  Y    &kp U      &kp I        &kp O    &kp P   
+            &kp Q      &kp W      &ht UP E  &lt 1 R      &kp T       &kp  Y    &kp U      &kp I        &kp O    &kp P   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ;:       │
             HRML(A,        S,         D,         F)     &kp G         &ht LEFT H &ht DOWN J &ht UP K   &ht RIGHT L &kp SEMI            
@@ -131,7 +131,7 @@
             bindings =<
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  HOME    │  END     │  Page up │  Page Dw │          │   │    (     │  )       │   [      │   ]      │ {        │
-            &kp HOME  &kp END    &kp PG_UP  &kp PG_DN  &trans          &kp LPAR  &kp RPAR    &kp LBKT   &kp RBKT    &kp LBRC
+            HRML(Q, 	W,	   E,		R)	&trans          &kp LPAR  &kp RPAR    &kp LBKT   &kp RBKT    &kp LBRC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  <-      │  Down    │  UP      │    ->    │  }       │
            &trans    &trans     &trans     &trans     &trans          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &kp RBRC
