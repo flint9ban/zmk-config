@@ -32,7 +32,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&ltsh LSHFT>, <&kp>;
+            bindings = <&ltsh>, <&kp>;
         };
         ht: hold_tap {
             label = "hold_tap";
