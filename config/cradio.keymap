@@ -221,7 +221,7 @@
             bindings =<
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │   *      │  4       │  5       │  6       │    +     │
-            &kp F11   &kp F12    &kp LG(V)  &kp LG(C)  &kp ESC        &kp KP_MULTIPLY &kp N4  &kp N5     &kp N6    &kp PLUS
+            &kp F11   &kp F12    &kp LC(V)  &kp LC(C)  &kp ESC        &kp KP_MULTIPLY &kp N4  &kp N5     &kp N6    &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │   %      │  1       │  2       │ 3        │   -      │
            &kp LCTRL  &kp LEFT_GUI &kp LEFT_ALT &kp LEFT_SHIFT &trans         &kp PRCNT    &kp N1     &kp N2      &kp N3  &kp MINUS
