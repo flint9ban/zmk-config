@@ -158,16 +158,14 @@
             key-positions = <27 16>;
             layers = <0 1>;
         };
-
-
-    behaviors {
     };
+
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <1 2 3>;
-            then-layer = <5>;
+            then-layer = <4>;
         };
     };
 
