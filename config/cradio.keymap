@@ -159,17 +159,6 @@
             layers = <0 1>;
         };
 
-        lclk {
-            bindings = <&mkp LCLK>;
-            key-positions = <26 27>;
-            layers = <0 1>;
-        };
-
-        rclk {
-            bindings = <&mkp RCLK>;
-            key-positions = <28 27>;
-            layers = <0 1>;
-        };
 
     behaviors {
     };
