@@ -76,7 +76,7 @@
 
         at {
             bindings = <&kp AT>;
-            key-positions = <1 2>;
+            key-positions = <1 12>;
             layers = <0 1>;
         };
 
@@ -88,7 +88,7 @@
 
         hash {
             bindings = <&kp HASH>;
-            key-positions = <2 3>;
+            key-positions = <2 13>;
             layers = <0 1>;
         };
 
